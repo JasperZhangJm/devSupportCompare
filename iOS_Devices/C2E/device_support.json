@@ -1,0 +1,178 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spCallkit",
+      "sp": true
+    },
+    {
+      "funcId": "spCamera",
+      "sp": true
+    },
+    {
+      "funcId": "spCameraRingCall",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "speed",
+          "type": "array",
+          "value": "[\"1.0\", \"2.0\"]"
+        }
+      ],
+      "funcId": "spCardRecordSpeed",
+      "sp": true
+    },
+    {
+      "funcId": "spCompressedQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spIndoor",
+      "sp": true
+    },
+    {
+      "funcId": "spJoker",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"off\"]"
+        }
+      ],
+      "funcId": "spNightVision",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "config",
+          "type": "string",
+          "value": "{\"matrix\":[406.25,0.0,277.0,0.0,419.25,161.0,0.0,0.0,1.0],\"rotationAngle\":360.0,\"tiltAngle\":0.0,\"filedAngle\":83.0,\"needCorrect\":false}"
+        }
+      ],
+      "funcId": "spPanoramaConfig",
+      "sp": true
+    },
+    {
+      "funcId": "spPictureReversal",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"wired\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "string",
+          "value": "5V/1A"
+        }
+      ],
+      "funcId": "spPowerAdpater",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "config",
+          "type": "string",
+          "value": "{\"directionNum\":4}"
+        }
+      ],
+      "funcId": "spPtzConfig",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spSoftwareShutdown",
+      "sp": true
+    },
+    {
+      "funcId": "spStandalone",
+      "sp": true
+    },
+    {
+      "funcId": "spStatusLight",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"external\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "funcId": "spTimeFormat",
+      "sp": true
+    },
+    {
+      "funcId": "spTimeLinePlay",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "resolution",
+          "type": "array",
+          "value": "[\"2K\"]"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"2KHigh\", \"2KLow\"]"
+        },
+        {
+          "key": "size",
+          "type": "string",
+          "value": "{\"width\": 2304, \"height\": 1296}"
+        }
+      ],
+      "funcId": "spVideo",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\", \"5G\"]"
+        }
+      ],
+      "funcId": "spWifi",
+      "sp": true
+    }
+  ],
+  "model": "C2E"
+}
