@@ -13,11 +13,13 @@ iOS对应的目录为：iOS_Devices/{model}/device_support.json
 # 原有的 remote support key，雷达、配网WiFi频段、存储卡信息、供电模式、视频清晰度、压缩格式二维码、太阳能板、低功耗设备、夜视、卡录播放速度
 # Android不包含video共9项，iOS包含video共10项，每项固定，是远端的优化点
 remoteSupportKeyOfAndroid = ['radar', 'wifi', 'storage', 'power', 'compressedQrCode', 'equipSolarPanel', 'lowpowerdevice', 'nightVision', 'cardRecordSpeed']
+
 remoteSupportKeyOfiOS = ['radar', 'wifi', 'storage', 'power', 'video', 'compressedQrCode', 'equipSolarPanel', 'lowpowerdevice', 'nightVision', 'cardRecordSpeed']
 
 
 # 下沉后的 local support key，Android一共9项（不包含video），iOS一共10项（包含video），每项固定，为此次优化点
 localSupportKeyOfAndroid = ['spRadar', 'spWifiBand', 'spStorage', 'spPower', 'spCompressedQrCode', 'spEquipSolarPanel', 'spLowPowerDevice', 'spNightVision', 'spCardRecordSpeed']
+
 localSupportKeyOfiOS = ['spRadar', 'spWifi', 'spStorage', 'spPower', 'spVideo', 'spCompressedQrCode', 'spEquipSolarPanel', 'spLowPowerDevice', 'spNightVision', 'spCardRecordSpeed']
 
 Android本地目录：
