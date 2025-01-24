@@ -1,0 +1,47 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorGateway",
+      "sp": true
+    },
+    {
+      "funcId": "spHomeBase",
+      "sp": true
+    },
+    {
+      "funcId": "spIndoor",
+      "sp": true
+    },
+    {
+      "funcId": "spPower",
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"wired\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spStorage",
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spSuitSeries",
+      "sp": true
+    }
+  ],
+  "model": "H1L"
+}

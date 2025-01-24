@@ -1,0 +1,41 @@
+[
+  {
+    "setting": "ClearDataWhenUnbind",
+    "dp": "112",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "CustomCommand",
+    "dp": "111",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpStringParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "FactoryMode",
+    "dp": "110",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "FormatStorage",
+    "dp": "105",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "HomeBasePairCamerasInfo",
+    "dp": "116",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpStringParser"
+  },
+  {
+    "setting": "StorageCapability",
+    "dp": "103",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpJsonParser",
+    "jsonClass": "com.glazero.biz.base.model.GzCardMemory"
+  },
+  {
+    "setting": "StorageState",
+    "dp": "104",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser"
+  }
+]

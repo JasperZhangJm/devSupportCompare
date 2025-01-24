@@ -1,0 +1,134 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorPairWithHomeBase",
+      "sp": true
+    },
+    {
+      "funcId": "spAutoAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spBatteryPower",
+      "sp": true
+    },
+    {
+      "funcId": "spCamera",
+      "sp": true
+    },
+    {
+      "funcId": "spKeySync",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "funcId": "spMountGuide",
+      "sp": true
+    },
+    {
+      "funcId": "spNightVision",
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"lightNormal\", \"off\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "funcId": "spPir",
+      "sp": true
+    },
+    {
+      "funcId": "spPower",
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spPowerSaveMode",
+      "sp": true
+    },
+    {
+      "funcId": "spPrivacyArea",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spSleep",
+      "sp": true
+    },
+    {
+      "funcId": "spStatusLight",
+      "sp": true
+    },
+    {
+      "funcId": "spStayEvent",
+      "sp": true
+    },
+    {
+      "funcId": "spStorage",
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spStrangerLingeringDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spSuitSeries",
+      "sp": true
+    },
+    {
+      "funcId": "spSummaryEvent",
+      "sp": true
+    },
+    {
+      "funcId": "spTurnOff",
+      "sp": true
+    },
+    {
+      "funcId": "spVideoClarity",
+      "sp": true,
+      "data": [
+        {
+          "key": "resolution",
+          "type": "string",
+          "value": "{\"width\": 2560, \"height\": 1920}"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"UHDHigh\", \"UHDLow\"]"
+        }
+      ]
+    },
+    {
+      "funcId": "spWhiteLight",
+      "sp": true
+    }
+  ],
+  "model": "SC6S"
+}
