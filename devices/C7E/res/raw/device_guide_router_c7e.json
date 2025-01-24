@@ -1,0 +1,260 @@
+[
+  {
+    "page_id": "",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "page_guide_start"
+      }
+    ]
+  },
+  {
+    "page_id": "page_guide_start",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "doorbell_settings"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_settings",
+    "data": {
+      "page_number": "1",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "start_work_type"
+      },
+      {
+        "condition": {},
+        "target_page_id": "doorbell_settings_name"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_settings_name",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "1"
+          ]
+        },
+        "target_page_id": "device_name_success_settings"
+      },
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "start_work_type"
+      }
+    ]
+  },
+  {
+    "page_id": "device_name_success_settings",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "start_work_type"
+      }
+    ]
+  },
+  {
+    "page_id": "start_work_type",
+    "data": {
+      "page_number": "2",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_mount_position"
+      },
+      {
+        "condition": {},
+        "target_page_id": "camera_power_type"
+      }
+    ]
+  },
+  {
+    "page_id": "camera_power_type",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_mount_position"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_mount_position",
+    "data": {
+      "page_number": "3",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_share"
+      },
+      {
+        "condition": {},
+        "target_page_id": "example_find_location"
+      }
+    ]
+  },
+  {
+    "page_id": "example_find_location",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "check_camera_signal"
+      }
+    ]
+  },
+  {
+    "page_id": "check_camera_signal",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "example_install_camera"
+      }
+    ]
+  },
+  {
+    "page_id": "example_install_camera",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "example_solar_panel"
+      }
+    ]
+  },
+  {
+    "page_id": "example_solar_panel",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "real_time_video"
+      }
+    ]
+  },
+  {
+    "page_id": "real_time_video",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "camera_charge"
+      }
+    ]
+  },
+  {
+    "page_id": "camera_charge",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "doorbell_share"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_share",
+    "data": {
+      "page_number": "4",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ],
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_hardware_upgrade_message"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_share_device"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_share_device",
+    "router": [
+      {
+        "condition": {
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_hardware_upgrade_message"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_hardware_upgrade_message",
+    "router": [
+      {
+        "condition": {
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_hardware_upgrade"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_hardware_upgrade",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_success"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_success",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": ""
+      }
+    ]
+  }
+]
