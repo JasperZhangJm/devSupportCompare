@@ -1,0 +1,201 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spAutoAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spCamera",
+      "sp": true
+    },
+    {
+      "funcId": "spCardRecordSpeed",
+      "data": [
+        {
+          "key": "speed",
+          "type": "array",
+          "value": "[\"1.0\", \"2.0\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spCompressedQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spMountGuide",
+      "sp": true
+    },
+    {
+      "funcId": "spNightVision",
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"lightSmart\", \"off\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "funcId": "spPanoramaIncline",
+      "sp": true
+    },
+    {
+      "funcId": "spPanoramaInternalConfig",
+      "sp": true,
+      "data": [
+        {
+          "key": "internalMatrix",
+          "type": "array",
+          "value": "[524.193548387097, 0.0, 357.41935483871, 0.0, 540.967741935484, 207.741935483871, 0.0, 0.0, 1.0]"
+        },
+        {
+          "key": "totalAngle",
+          "type": "double",
+          "value": "180.0"
+        },
+        {
+          "key": "tiltAngle",
+          "type": "double",
+          "value": "-15.0"
+        },
+        {
+          "key": "filedAngle",
+          "type": "double",
+          "value": "83.0"
+        }
+      ]
+    },
+    {
+      "funcId": "spPanoramaWithCalibrate",
+      "sp": true
+    },
+    {
+      "funcId": "spPower",
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"wired\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spPtz",
+      "sp": true
+    },
+    {
+      "funcId": "spPtzControlDirection",
+      "sp": true,
+      "data": [
+        {
+          "key": "directions",
+          "type": "int",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "funcId": "spPtzTracking",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spReconnectWiFi",
+      "sp": true
+    },
+    {
+      "funcId": "spRecordMode",
+      "sp": true
+    },
+    {
+      "funcId": "spStandalone",
+      "sp": true
+    },
+    {
+      "funcId": "spStatusLight",
+      "sp": true
+    },
+    {
+      "funcId": "spStayEvent",
+      "sp": true
+    },
+    {
+      "funcId": "spStorage",
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"external\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spStrangerLingeringDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spTimeLinePlay",
+      "sp": true
+    },
+    {
+      "funcId": "spTimeSystem",
+      "sp": true
+    },
+    {
+      "funcId": "spTurnOff",
+      "sp": true
+    },
+    {
+      "funcId": "spVideoClarity",
+      "sp": true,
+      "data": [
+        {
+          "key": "resolution",
+          "type": "string",
+          "value": "{\"width\": 2304, \"height\": 1296}"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"_2KHigh\", \"_2KLow\"]"
+        }
+      ]
+    },
+    {
+      "funcId": "spWhiteLight",
+      "sp": true
+    },
+    {
+      "funcId": "spWifiBand",
+      "sp": true,
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\"]"
+        }
+      ]
+    }
+  ],
+  "model": "C5L"
+}

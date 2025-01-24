@@ -1,0 +1,633 @@
+[
+  {
+    "page_id": "",
+    "config": {
+      "show_page_step_tv": "false"
+    },
+    "router": [
+      {
+        "condition": {
+          "common_guide_scene": [
+            "put_position_guide"
+          ]
+        },
+        "target_page_id": "guide_find_install_site"
+      },
+      {
+        "condition": {
+          "common_guide_scene": [
+            "storage_card_guide"
+          ]
+        },
+        "target_page_id": "mount_storage_card"
+      },
+      {
+        "condition": {},
+        "target_page_id": "page_guide_start"
+      }
+    ]
+  },
+  {
+    "page_id": "page_guide_start",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "record_storage_way"
+      }
+    ]
+  },
+  {
+    "page_id": "record_storage_way",
+    "router": [
+      {
+        "condition": {
+          "cloud_record_storage": [
+            "true"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      },
+      {
+        "condition": {},
+        "target_page_id": "mount_storage_card"
+      }
+    ]
+  },
+  {
+    "page_id": "mount_storage_card",
+    "data": {
+      "page_number": "1",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {
+          "have_card": [
+            "true"
+          ]
+        },
+        "target_page_id": "check_storage_card_status"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_unplug_power_cord"
+      },
+      {
+        "condition": {},
+        "target_page_id": "try_cloud_storage_guiding"
+      }
+    ]
+  },
+  {
+    "page_id": "check_storage_card_status",
+    "router": [
+      {
+        "condition": {
+          "have_card": [
+            "true"
+          ]
+        },
+        "target_page_id": "show_card_status"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_unplug_power_cord"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "true"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      }
+    ]
+  },
+  {
+    "page_id": "show_card_status",
+    "router": [
+      {
+        "condition": {
+          "common_guide_scene": [
+            "storage_card_guide"
+          ]
+        },
+        "target_page_id": ""
+      },
+      {
+        "condition": {
+          "action_click_tag": [
+            "3"
+          ]
+        },
+        "target_page_id": "guide_unplug_power_cord"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ],
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_unplug_power_cord"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "true"
+          ],
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      },
+      {
+        "condition": {},
+        "target_page_id": "local_record_mode"
+      }
+    ]
+  },
+  {
+    "page_id": "local_record_mode",
+    "router": [
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_unplug_power_cord"
+      },
+      {
+        "condition": {},
+        "target_page_id": "try_cloud_storage_guiding"
+      }
+    ]
+  },
+  {
+    "page_id": "try_cloud_storage_guiding",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_unplug_power_cord"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_unplug_power_cord",
+    "data": {
+      "page_number": "2",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "example_find_location"
+      }
+    ]
+  },
+  {
+    "page_id": "example_find_location",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_select_region"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_select_region",
+    "transfers_condition": {
+      "select_region_mode": [
+        "guide_guidance_video",
+        "guide_ac_find_parts",
+        "guide_ac_find_tools",
+        "guide_ac_power_off",
+        "guide_ac_install_box_1",
+        "guide_ac_install_box_2",
+        "guide_ac_install_box_3",
+        "guide_ac_install_box_4",
+        "guide_ac_install_plate",
+        "guide_ac_select_install_position",
+        "guide_ac_wire",
+        "guide_ac_screws",
+        "guide_ac_hook",
+        "guide_ac_ladder",
+        "guide_ac_connect_1",
+        "guide_ac_connect_2",
+        "guide_ac_connect_3",
+        "guide_ac_fix",
+        "guide_ac_light",
+        "guide_ac_power_on",
+        "guide_ac_install_finish"
+      ]
+    },
+    "router": [
+      {
+        "condition": {
+          "select_region_mode": [
+            "eur"
+          ]
+        },
+        "target_page_id": "guide_guidance_video"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "usa"
+          ]
+        },
+        "target_page_id": "guide_guidance_video"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_guidance_video",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_ac_find_parts"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_set_lights_brightness"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_find_parts",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_find_tools"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_find_tools",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_power_off"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_power_off",
+    "router": [
+      {
+        "condition": {
+          "select_region_mode": [
+            "eur"
+          ]
+        },
+        "target_page_id": "guide_ac_install_box_1"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "usa"
+          ]
+        },
+        "target_page_id": "guide_ac_install_plate"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_box_1",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_install_box_2"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_box_2",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_install_box_3"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_box_3",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_install_box_4"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_box_4",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_select_install_position"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_plate",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_select_install_position"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_select_install_position",
+    "transfers_condition": {
+      "install_position_mode": [
+        "guide_ac_wire",
+        "guide_ac_screws",
+        "guide_ac_hook",
+        "guide_ac_ladder",
+        "guide_ac_connect_1",
+        "guide_ac_connect_2",
+        "guide_ac_connect_3",
+        "guide_ac_fix",
+        "guide_ac_light",
+        "guide_ac_power_on",
+        "guide_ac_install_finish"
+      ]
+    },
+    "router": [
+      {
+        "condition": {
+          "select_region_mode": [
+            "eur"
+          ],
+          "install_position_mode": [
+            "wall"
+          ]
+        },
+        "target_page_id": "guide_ac_wire"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "eur"
+          ],
+          "install_position_mode": [
+            "roof"
+          ]
+        },
+        "target_page_id": "guide_ac_wire"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "usa"
+          ],
+          "install_position_mode": [
+            "wall"
+          ]
+        },
+        "target_page_id": "guide_ac_wire"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "usa"
+          ],
+          "install_position_mode": [
+            "roof"
+          ]
+        },
+        "target_page_id": "guide_ac_wire"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_wire",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_screws"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_screws",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_hook"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_hook",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_ladder"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_ladder",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_connect_1"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_connect_1",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_connect_2"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_connect_2",
+    "router": [
+      {
+        "condition": {
+          "select_region_mode": [
+            "eur"
+          ]
+        },
+        "target_page_id": "guide_ac_fix"
+      },
+      {
+        "condition": {
+          "select_region_mode": [
+            "usa"
+          ]
+        },
+        "target_page_id": "guide_ac_connect_3"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_connect_3",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_fix"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_fix",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_light"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_light",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_power_on"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_power_on",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_ac_install_finish"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_ac_install_finish",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_set_lights_brightness"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_set_lights_brightness",
+    "router": [
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ],
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_set_detection_ai_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_ai_entrance_fragment",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_default_visual_angle_fragment",
+    "router": [
+      {
+        "condition": {
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_set_detection_ai_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_set_detection_ai_fragment",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "doorbell_share"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_share",
+    "data": {
+      "page_number": "3",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_share_device"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_share_device",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_success"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_success",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": ""
+      }
+    ]
+  }
+]

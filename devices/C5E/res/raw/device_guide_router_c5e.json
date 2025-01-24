@@ -1,0 +1,307 @@
+[
+  {
+    "page_id": "",
+    "config": {
+      "show_page_step_tv": "false"
+    },
+    "router": [
+      {
+        "condition": {
+          "common_guide_scene": [
+            "storage_card_guide"
+          ]
+        },
+        "target_page_id": "mount_storage_card"
+      },
+      {
+        "condition": {},
+        "target_page_id": "page_guide_start"
+      }
+    ]
+  },
+  {
+    "page_id": "page_guide_start",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_storage_ways"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_storage_ways",
+    "data": {
+      "page_number": "1",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_mount_position"
+      },
+      {
+        "condition": {},
+        "target_page_id": "local_record_mode"
+      }
+    ]
+  },
+  {
+    "page_id": "local_record_mode",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "record_storage_way"
+      }
+    ]
+  },
+  {
+    "page_id": "record_storage_way",
+    "router": [
+      {
+        "condition": {
+          "cloud_record_storage": [
+            "true"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      },
+      {
+        "condition": {},
+        "target_page_id": "mount_storage_card"
+      }
+    ]
+  },
+  {
+    "page_id": "mount_storage_card",
+    "router": [
+      {
+        "condition": {
+          "have_card": [
+            "true"
+          ]
+        },
+        "target_page_id": "check_storage_card_status"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_mount_position"
+      },
+      {
+        "condition": {},
+        "target_page_id": "try_cloud_storage_guiding"
+      }
+    ]
+  },
+  {
+    "page_id": "check_storage_card_status",
+    "router": [
+      {
+        "condition": {
+          "have_card": [
+            "true"
+          ]
+        },
+        "target_page_id": "show_card_status"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_mount_position"
+      },
+      {
+        "condition": {
+          "common_go_cloud_page": [
+            "true"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      }
+    ]
+  },
+  {
+    "page_id": "show_card_status",
+    "router": [
+      {
+        "condition": {
+          "common_guide_scene": [
+            "storage_card_guide"
+          ]
+        },
+        "target_page_id": ""
+      },
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "try_cloud_storage_guiding"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_mount_position"
+      }
+    ]
+  },
+  {
+    "page_id": "try_cloud_storage_guiding",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_mount_position"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_mount_position",
+    "data": {
+      "page_number": "2",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_share"
+      },
+      {
+        "condition": {},
+        "target_page_id": "example_find_location"
+      }
+    ]
+  },
+  {
+    "page_id": "example_find_location",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "check_camera_signal"
+      }
+    ]
+  },
+  {
+    "page_id": "check_camera_signal",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "example_install_camera"
+      }
+    ]
+  },
+  {
+    "page_id": "example_install_camera",
+    "router": [
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ],
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_set_detection_ai_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_ai_entrance_fragment",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_default_visual_angle_fragment",
+    "router": [
+      {
+        "condition": {
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_set_detection_ai_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_set_detection_ai_fragment",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "doorbell_share"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_share",
+    "data": {
+      "page_number": "3",
+      "page_count": "3"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_share_device"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_share_device",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_success"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_success",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": ""
+      }
+    ]
+  }
+]
