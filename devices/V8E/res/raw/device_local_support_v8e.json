@@ -1,0 +1,153 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorBluetooth",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spAddDingDong",
+      "sp": true
+    },
+    {
+      "funcId": "spBatteryPower",
+      "sp": true
+    },
+    {
+      "funcId": "spBreathLight",
+      "sp": true
+    },
+    {
+      "funcId": "spCompressedQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbell",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbellRingCall",
+      "sp": true
+    },
+    {
+      "funcId": "spFaceDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spKeyReset",
+      "sp": true
+    },
+    {
+      "funcId": "spLowPowerDevice",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "funcId": "spMountGuide",
+      "sp": true
+    },
+    {
+      "funcId": "spNightVision",
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"off\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "funcId": "spPir",
+      "sp": true
+    },
+    {
+      "funcId": "spPower",
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spPrivacyArea",
+      "sp": true
+    },
+    {
+      "funcId": "spReconnectWiFi",
+      "sp": true
+    },
+    {
+      "funcId": "spSleep",
+      "sp": true
+    },
+    {
+      "funcId": "spStandalone",
+      "sp": true
+    },
+    {
+      "funcId": "spStayEvent",
+      "sp": true
+    },
+    {
+      "funcId": "spStorage",
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"external\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spStrangerLingeringDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spVideoClarity",
+      "sp": true,
+      "data": [
+        {
+          "key": "resolution",
+          "type": "string",
+          "value": "{\"width\": 1080, \"height\": 1920}"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"_2KHigh\", \"_2KLow\"]"
+        }
+      ]
+    },
+    {
+      "funcId": "spVolumeControl",
+      "sp": true
+    },
+    {
+      "funcId": "spWifiBand",
+      "sp": true,
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\"]"
+        }
+      ]
+    }
+  ],
+  "model": "V8E"
+}

@@ -1,0 +1,478 @@
+[
+  {
+    "page_id": "",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "page_guide_start"
+      }
+    ]
+  },
+  {
+    "page_id": "page_guide_start",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "install_doorbell"
+      }
+    ]
+  },
+  {
+    "page_id": "install_doorbell",
+    "data": {
+      "page_number": "1",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_settings"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_parts_1"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_parts_1",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_parts_2"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_parts_2",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_tools"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_tools",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_power_supply_mode"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_power_supply_mode",
+    "transfers_condition": {
+      "power_supply_mode": [
+        "doorbell_fix_mounting_wedge",
+        "mount_doorbell_to_mounting_plate"
+      ]
+    },
+    "router": [
+      {
+        "condition": {
+          "power_supply_mode": [
+            "wired"
+          ]
+        },
+        "target_page_id": "confirm_doorbell_wired_connection"
+      },
+      {
+        "condition": {
+          "power_supply_mode": [
+            "battery_power_only"
+          ]
+        },
+        "target_page_id": "doorbell_install_height_guide"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "confirm_doorbell_wired_connection"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_install_height_guide",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_same_side_with_door"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_mounting_wedge_selection",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_fix_positioning_card"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_fix_positioning_card",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_fix_mounting_wedge"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_fix_mounting_wedge",
+    "router": [
+      {
+        "condition": {
+          "power_supply_mode": [
+            "wired"
+          ]
+        },
+        "target_page_id": "doorbell_connect_weak_wire"
+      },
+      {
+        "condition": {
+          "power_supply_mode": [
+            "battery_power_only"
+          ]
+        },
+        "target_page_id": "confirm_doorbell_online"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "confirm_doorbell_online"
+      }
+    ]
+  },
+  {
+    "page_id": "confirm_doorbell_online",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "mount_doorbell_to_mounting_plate"
+      }
+    ]
+  },
+  {
+    "page_id": "mount_doorbell_to_mounting_plate",
+    "router": [
+      {
+        "condition": {
+          "power_supply_mode": [
+            "wired"
+          ],
+          "guide_dismount_doorbell_to_mounting_plate": [
+            "false"
+          ]
+        },
+        "target_page_id": "doorbell_select_old_bell_type"
+      },
+      {
+        "condition": {
+          "power_supply_mode": [
+            "battery_power_only"
+          ],
+          "guide_dismount_doorbell_to_mounting_plate": [
+            "false"
+          ]
+        },
+        "target_page_id": "doorbell_mount_done"
+      },
+      {
+        "condition": {
+          "guide_dismount_doorbell_to_mounting_plate": [
+            "true"
+          ]
+        },
+        "target_page_id": "dismount_doorbell_to_mounting_plate"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_done"
+      }
+    ]
+  },
+  {
+    "page_id": "dismount_doorbell_to_mounting_plate",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_done"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_mount_done",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_settings"
+      }
+    ]
+  },
+  {
+    "page_id": "confirm_doorbell_wired_connection",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "uninstall_old_doorbell"
+      }
+    ]
+  },
+  {
+    "page_id": "uninstall_old_doorbell",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_fix_wire"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_fix_wire",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_same_side_with_door"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_mount_same_side_with_door",
+    "transfers_condition": {
+      "mount_other_side": [
+        "doorbell_fix_mounting_wedge",
+        "doorbell_fix_positioning_card"
+      ]
+    },
+    "router": [
+      {
+        "condition": {
+          "mount_other_side": [
+            "true"
+          ]
+        },
+        "target_page_id": "doorbell_mounting_wedge_selection"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_fix_positioning_card"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_connect_weak_wire",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "confirm_doorbell_online"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_select_old_bell_type",
+    "router": [
+      {
+        "condition": {
+          "digital_chime": [
+            "true"
+          ]
+        },
+        "target_page_id": "doorbell_duration_setting"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_done"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_duration_setting",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_mount_done"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_settings",
+    "data": {
+      "page_number": "2",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_motion_settings"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_settings_name"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_settings_name",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "1"
+          ]
+        },
+        "target_page_id": "device_name_success_settings"
+      },
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_motion_settings"
+      }
+    ]
+  },
+  {
+    "page_id": "device_name_success_settings",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_motion_settings"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_motion_settings",
+    "data": {
+      "page_number": "3",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_share"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_motion_sensitivity"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_motion_sensitivity",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_key_motion_area"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_key_motion_area",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_motion_area_setting"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_motion_area_setting",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "doorbell_share"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "doorbell_share"
+      }
+    ]
+  },
+  {
+    "page_id": "doorbell_share",
+    "data": {
+      "page_number": "4",
+      "page_count": "4"
+    },
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {
+        },
+        "target_page_id": "guide_share_device"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_share_device",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": "guide_success"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_success",
+    "router": [
+      {
+        "condition": {
+        },
+        "target_page_id": ""
+      }
+    ]
+  }
+]

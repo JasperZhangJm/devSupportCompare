@@ -1,0 +1,143 @@
+[
+  {
+    "setting": "BatteryLevel",
+    "dp": "145",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser"
+  },
+  {
+    "setting": "BatterySavingMode",
+    "dp": "184",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpEnumParser"
+  },
+  {
+    "setting": "BreathLightSwitch",
+    "dp": "101",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "CameraInfo",
+    "dp": "245",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpJsonParser",
+    "jsonClass": "com.glazero.data.setting.GzCameraInfo"
+  },
+  {
+    "setting": "ClearDataWhenUnbind",
+    "dp": "232",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "CustomCommand",
+    "dp": "238",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpStringParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "DoorbellVolume",
+    "dp": "160",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser"
+  },
+  {
+    "setting": "FactoryMode",
+    "dp": "237",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "FormatStorage",
+    "dp": "111",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser",
+    "mode": "WRITE_ONLY"
+  },
+  {
+    "setting": "InfraredMode",
+    "dp": "108",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpEnumParser"
+  },
+  {
+    "setting": "IsRecordMute",
+    "dp": "197",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "MotionDetection",
+    "dp": "235",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizMotionDetectionConfigParser"
+  },
+  {
+    "setting": "MotionDetectionSwitch",
+    "dp": "134",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "MotionDetectionZone",
+    "dp": "169",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizMotionAreaParser"
+  },
+  {
+    "setting": "OnOff",
+    "dp": "103",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "OnOffState",
+    "dp": "143",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser",
+    "mode": "READ_ONLY"
+  },
+  {
+    "setting": "PersonDetectionOnlyMode",
+    "dp": "170",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "PirSensitivityCamera",
+    "dp": "152",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizPirSensitivityCameraParser"
+  },
+  {
+    "setting": "PowerMode",
+    "dp": "146",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpEnumParser"
+  },
+  {
+    "setting": "PrivacyArea",
+    "dp": "236",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizPrivacyAreaParser"
+  },
+  {
+    "setting": "QuickReplyMsg",
+    "dp": "234",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizQuickReplyMsgParser"
+  },
+  {
+    "setting": "SpeakerVolume",
+    "dp": "160",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser"
+  },
+  {
+    "setting": "StorageCapability",
+    "dp": "109",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpJsonParser",
+    "jsonClass": "com.glazero.biz.base.model.GzCardMemory"
+  },
+  {
+    "setting": "StorageState",
+    "dp": "110",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpIntParser"
+  },
+  {
+    "setting": "VideoDefinition",
+    "dp": "231",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpEnumParser"
+  },
+  {
+    "setting": "WakeState",
+    "dp": "149",
+    "parser": "com.glazero.data.setting.dp.parser.common.DpBooleanParser"
+  },
+  {
+    "setting": "WifiSignalDevice",
+    "dp": "126",
+    "parser": "com.glazero.data.setting.dp.parser.biz.DpBizWifiSignalCameraParser"
+  }
+]

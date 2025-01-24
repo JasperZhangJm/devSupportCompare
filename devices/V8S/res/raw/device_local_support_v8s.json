@@ -1,0 +1,153 @@
+{
+  "config": [
+    {
+      "funcId": "spAPDiagnostic",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spBatteryPower",
+      "sp": true
+    },
+    {
+      "funcId": "spBreathLight",
+      "sp": true
+    },
+    {
+      "funcId": "spDismantleAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbell",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbellRingCall",
+      "sp": true
+    },
+    {
+      "funcId": "spFaceDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spKeySync",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "funcId": "spMountGuide",
+      "sp": true
+    },
+    {
+      "funcId": "spMountingWedge15",
+      "sp": true
+    },
+    {
+      "funcId": "spNightVision",
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"off\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "funcId": "spPir",
+      "sp": true
+    },
+    {
+      "funcId": "spPower",
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\", \"weakCurrent\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spPrivacyArea",
+      "sp": true
+    },
+    {
+      "funcId": "spRadar",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spReconnectWiFi",
+      "sp": true
+    },
+    {
+      "funcId": "spScrewdriver",
+      "sp": true
+    },
+    {
+      "funcId": "spStayEvent",
+      "sp": true
+    },
+    {
+      "funcId": "spStorage",
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "sp": true
+    },
+    {
+      "funcId": "spStrangerLingeringDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spVideoClarity",
+      "sp": true,
+      "data": [
+        {
+          "key": "resolution",
+          "type": "string",
+          "value": "{\"width\": 2560, \"height\": 1920}"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"UHDHigh\", \"UHDLow\"]"
+        }
+      ]
+    },
+    {
+      "funcId": "spWifiBand",
+      "sp": true,
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\", \"5G\"]"
+        }
+      ]
+    }
+  ],
+  "model": "V8S"
+}
