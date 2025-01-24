@@ -1,0 +1,162 @@
+[
+  {
+    "page_id": "",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_select_work_type"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_select_work_type",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_find_install_site"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_find_install_site",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_check_wifi_signal"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_check_wifi_signal",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_install_product"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_install_product",
+    "router": [
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ],
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {
+          "common_detection_default_angle": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      },
+      {
+        "condition": {
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_hardware_upgrade_message"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_ai_entrance_fragment",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": "guide_detection_default_visual_angle_fragment"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_detection_default_visual_angle_fragment",
+    "router": [
+      {
+        "condition": {
+          "common_has_default_angle": [
+            "false"
+          ]
+        },
+        "target_page_id": "guide_detection_ai_entrance_fragment"
+      },
+      {
+        "condition": {
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_hardware_upgrade_message"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_hardware_upgrade_message",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ],
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": ""
+      },
+      {
+        "condition": {
+          "common_skip_hardware_upgrade": [
+            "true"
+          ]
+        },
+        "target_page_id": "guide_success"
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_hardware_upgrade"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_hardware_upgrade",
+    "router": [
+      {
+        "condition": {
+          "action_click_tag": [
+            "2"
+          ]
+        },
+        "target_page_id": ""
+      },
+      {
+        "condition": {},
+        "target_page_id": "guide_success"
+      }
+    ]
+  },
+  {
+    "page_id": "guide_success",
+    "router": [
+      {
+        "condition": {},
+        "target_page_id": ""
+      }
+    ]
+  }
+]
