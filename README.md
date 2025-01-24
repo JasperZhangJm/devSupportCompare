@@ -21,12 +21,15 @@ localSupportKeyOfAndroid = ['spRadar', 'spWifiBand', 'spStorage', 'spPower', 'sp
 localSupportKeyOfiOS = ['spRadar', 'spWifi', 'spStorage', 'spPower', 'spVideo', 'spCompressedQrCode', 'spEquipSolarPanel', 'spLowPowerDevice', 'spNightVision', 'spCardRecordSpeed']
 
 Android本地目录：
+
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/7c03dc07-5157-46bb-ada4-a6aeabc50713" />
 
 iOS本地目录：
+
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/2b03eec9-3290-4ad7-9274-a15512ba46f7" />
 
 Android support项、iOS support项：
+
 <img width="640" alt="image" src="https://github.com/user-attachments/assets/96ce34f2-09ea-42ce-a223-ba26fe44f271" />
 
 
