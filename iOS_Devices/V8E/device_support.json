@@ -1,0 +1,138 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorBluetooth",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spAddDingDong",
+      "sp": true
+    },
+    {
+      "funcId": "spCallkit",
+      "sp": true
+    },
+    {
+      "funcId": "spCompressedQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spCorrelationCameraLayout",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbell",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbellRingCall",
+      "sp": true
+    },
+    {
+      "funcId": "spFaceDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spJoker",
+      "sp": true
+    },
+    {
+      "funcId": "spLowPowerDevice",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"off\"]"
+        }
+      ],
+      "funcId": "spNightVision",
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "funcId": "spScrewdriver",
+      "sp": true
+    },
+    {
+      "funcId": "spStandalone",
+      "sp": true
+    },
+    {
+      "funcId": "spStay",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"external\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "resolution",
+          "type": "array",
+          "value": "[\"2K\"]"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"2KHigh\", \"2KLow\"]"
+        },
+        {
+          "key": "size",
+          "type": "string",
+          "value": "{\"width\": 1080, \"height\": 1920}"
+        }
+      ],
+      "funcId": "spVideo",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\"]"
+        }
+      ],
+      "funcId": "spWifi",
+      "sp": true
+    }
+  ],
+  "model": "V8E"
+}

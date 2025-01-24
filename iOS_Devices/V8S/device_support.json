@@ -1,0 +1,121 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spCallkit",
+      "sp": true
+    },
+    {
+      "funcId": "spDismantleAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbell",
+      "sp": true
+    },
+    {
+      "funcId": "spDoorbellRingCall",
+      "sp": true
+    },
+    {
+      "funcId": "spFaceDetect",
+      "sp": true
+    },
+    {
+      "funcId": "spJoker",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "funcId": "spMountingWedge15",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"off\"]"
+        }
+      ],
+      "funcId": "spNightVision",
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\", \"weakCurrent\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "funcId": "spRadar",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spStay",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "resolution",
+          "type": "array",
+          "value": "[\"UHD\"]"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"UHDHigh\", \"UHDLow\"]"
+        }
+      ],
+      "funcId": "spVideo",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\", \"5G\"]"
+        }
+      ],
+      "funcId": "spWifi",
+      "sp": true
+    }
+  ],
+  "model": "V8S"
+}

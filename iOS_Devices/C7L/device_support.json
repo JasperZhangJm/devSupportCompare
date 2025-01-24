@@ -1,0 +1,149 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorAp",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorBluetooth",
+      "sp": true
+    },
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spAutoAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spCamera",
+      "sp": true
+    },
+    {
+      "funcId": "spCompressedQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spEquipSolarPanel",
+      "sp": true
+    },
+    {
+      "funcId": "spLowPowerDevice",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"lightNormal\", \"off\"]"
+        }
+      ],
+      "funcId": "spNightVision",
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "string",
+          "value": "5V/1A"
+        }
+      ],
+      "funcId": "spPowerAdpater",
+      "sp": true
+    },
+    {
+      "funcId": "spSoftwareShutdown",
+      "sp": true
+    },
+    {
+      "funcId": "spStandalone",
+      "sp": true
+    },
+    {
+      "funcId": "spStatusLight",
+      "sp": true
+    },
+    {
+      "funcId": "spStay",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"external\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "resolution",
+          "type": "array",
+          "value": "[\"2K\"]"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"2KHigh\", \"2KLow\"]"
+        },
+        {
+          "key": "size",
+          "type": "string",
+          "value": "{\"width\": 2304, \"height\": 1296}"
+        }
+      ],
+      "funcId": "spVideo",
+      "sp": true
+    },
+    {
+      "funcId": "spVoiceAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spWhiteLight",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "frequency",
+          "type": "array",
+          "value": "[\"2.4G\"]"
+        }
+      ],
+      "funcId": "spWifi",
+      "sp": true
+    }
+  ],
+  "model": "C7L"
+}

@@ -1,0 +1,134 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spAlarmLightBrightness",
+      "sp": true
+    },
+    {
+      "funcId": "spAutoAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spCamera",
+      "sp": true
+    },
+    {
+      "funcId": "spEquipSolarPanel",
+      "sp": true
+    },
+    {
+      "funcId": "spMotionZone",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "nightVisionMode",
+          "type": "array",
+          "value": "[\"auto\", \"lightNormal\", \"off\"]"
+        }
+      ],
+      "funcId": "spNightVision",
+      "sp": true
+    },
+    {
+      "funcId": "spOutdoor",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"battery\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "string",
+          "value": "5V/1A"
+        }
+      ],
+      "funcId": "spPowerAdpater",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "funcId": "spSoftwareShutdown",
+      "sp": true
+    },
+    {
+      "funcId": "spStatusLight",
+      "sp": true
+    },
+    {
+      "funcId": "spStay",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "funcId": "spSuitSeries",
+      "sp": true
+    },
+    {
+      "funcId": "spSummaryEvent",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "resolution",
+          "type": "array",
+          "value": "[\"UHD\"]"
+        },
+        {
+          "key": "level",
+          "type": "array",
+          "value": "[\"UHDHigh\", \"UHDLow\"]"
+        },
+        {
+          "key": "size",
+          "type": "string",
+          "value": "{\"width\": 2560, \"height\": 1920}"
+        }
+      ],
+      "funcId": "spVideo",
+      "sp": true
+    },
+    {
+      "funcId": "spVoiceAlarm",
+      "sp": true
+    },
+    {
+      "funcId": "spWhiteLight",
+      "sp": true
+    }
+  ],
+  "model": "SC7S"
+}

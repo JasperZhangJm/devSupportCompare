@@ -1,0 +1,58 @@
+{
+  "config": [
+    {
+      "funcId": "spActivatorQrCode",
+      "sp": true
+    },
+    {
+      "funcId": "spHomeBase",
+      "sp": true
+    },
+    {
+      "funcId": "spIndoor",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "array",
+          "value": "[\"wired\"]"
+        }
+      ],
+      "funcId": "spPower",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "mode",
+          "type": "string",
+          "value": "5V/1A"
+        }
+      ],
+      "funcId": "spPowerAdpater",
+      "sp": true
+    },
+    {
+      "funcId": "spReboot",
+      "sp": true
+    },
+    {
+      "data": [
+        {
+          "key": "sdcardType",
+          "type": "array",
+          "value": "[\"internal\"]"
+        }
+      ],
+      "funcId": "spStorage",
+      "sp": true
+    },
+    {
+      "funcId": "spSuitSeries",
+      "sp": true
+    }
+  ],
+  "model": "SH1L"
+}
